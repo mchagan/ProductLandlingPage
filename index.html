@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<script
+  defer
+  src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+></script>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <div id="page-wrapper">
+    <header id="header">
+      <div class="logo">
+        <img
+          id="header-img"
+          src="file:///home/mhagan/src/ProductLandingPage/efadda77bcec457c9a2e538b40d48665.png"
+          alt="Hagan Works logo"
+        />
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#intro">Features</a></li>
+          <li><a class="nav-link" href="#options">Options</a></li>
+          <li><a class="nav-link" href="#contact-section">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="container"></div>
+
+    <!-- <div class="container"> -->
+      <section id="intro">
+        <h2>Handcrafted, home-made kayaks, wherrys and doughboys (H 12 1/2)</h2>
+      </section>
+    <!-- </div> -->
+
+    <div class="container">
+      <section id="features">
+        <div class="grid">
+          <div class="icon">
+            <img src="shield.png" alt="Shield logo" width="50%" height="50%" />
+          </div>
+          <div class="desc">
+            <h2>Premium Materials</h2>
+            <p>
+              Our boats use the best marine plywood and wood which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon">
+            <img
+              src="fast.png"
+              alt="Fast Shipping logo"
+              width="50%"
+              height="50%"
+            />
+          </div>
+          <div class="desc">
+            <h2>Fast Shipping</h2>
+            <p>
+              We make sure you recieve your boat as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon">
+            <img
+              src="high-quality.png"
+              alt="High quality logo"
+              width="50%"
+              height="50%"
+            />
+          </div>
+          <div class="desc">
+            <h2>Quality Assurance</h2>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the boats.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="options">
+        <div class="product" id="kayak">
+          <div class="level">Kayak</div>
+          <h2>$2300</h2>
+          <ol>
+            <li>Easy to build but handsome and fast</li>
+            <li>High-volume bows lift you over rough seas</li>
+            <li>The skeg-like stern prevents weather-cocking in blustery winds</li>
+          </ol>
+          <iframe
+            id="video"
+            height="315"
+            src="phpThumb_generated_thumbnailjpg.jpeg"
+            title="CLC Kayak"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="wherry">
+          <div class="level">Wherry</div>
+          <h2>$4500</h2>
+          <ol>
+            <li>Solid stability and sea kindly</li>
+            <li>Excellent tracking, a buoyant bow, and ample flare</li>
+            <li>The wherry is a natural choice for rowing in choppy conditions.</li>
+          </ol>
+          <iframe
+            height="315"
+            src="https://www.youtube.com/embed/74tEBmiKcH4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="doughboy">
+          <div class="level">Herreshoff 12 1/2</div>
+          <h2>$23000</h2>
+          <ol>
+            <li>Hand built to Captain Nathaniel Herreshoff’s original 1914 offsets</li>
+            <li>We use identical materials and production practices</li>
+            <li>Either marconi or gaff rig available</li>
+          </ol>
+          <iframe
+            id="video2"
+            height="315"
+            src="https://www.youtube.com/embed/1EQipwthA-0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <button class="btn">Select</button>
+        </div>
+      </section>
+
+      <!-- <div class="container"></div> -->
+
+      <section id="contact-section">
+        <h1>Want More Information?</h1>
+        <!-- <form
+          id="form"
+          action="https://mailthis.to/NatHerreshoff"
+          method="POST"
+        > -->
+        <form
+          id="form"
+          action="https://www.freecodecamp.com/email-submit"
+        >
+          <label id="name-label" for="name">Name:</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="Your first name"
+            required
+          />
+          <input
+            type="text"
+            id="name"
+            name="last-name"
+            placeholder="Your last name"
+            required
+          />
+          <label id="email-label" for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@mail.com"
+            required
+          />
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}.[0-9]{3}.[0-9]{4}"
+            required=""
+            placeholder="Your phone number"
+          />
+          <br />
+          <small>Format: 123.456.7890</small>
+          <label class="interestedIn">Interested in:</label>
+          <div class="leftBlock">
+            <label class="grid-radio-button">
+              <input
+                name="kayak"
+                value="kayak"
+                type="checkbox"
+                class="input-checkbox"
+              />Kayak</label
+            >
+            <label class="grid-radio-button">
+              <input
+                name="wherry"
+                value="wherry"
+                type="checkbox"
+                class="input-checkbox"
+              />Wherry</label
+            >
+            <p />
+            <label class="grid-radio-button">
+              <input
+                name="herreshoff"
+                value="herreshoff"
+                type="checkbox"
+                class="input-checkbox"
+              />Herreshoff 12 1/2</label
+            >
+            <label class="grid-radio-button">
+              <input
+                name="other"
+                value="other"
+                type="checkbox"
+                class="input-checkbox"
+              />Other</label
+            >
+          </div>
+          <label for="characteristics">Characteristics desired:</label>
+          <textarea
+            name="characteristics"
+            id="characteristics"
+            placeholder="Color, Sail type, etc"
+            cols="30"
+            rows="7"
+          ></textarea>
+          <input type="hidden" name="_subject" value="Contact form submitted" />
+          <input type="hidden" name="_after" value="https://myhomepage.net/" />
+          <input type="hidden" name="_honeypot" value="" />
+          <input type="hidden" name="_confirmation" value="" />
+          <input
+            type="submit"
+            id="submit"
+            class="submit-button-class"
+            value="Send"
+          />
+        </form>
+      </section>
+    </div>
+    <footer>
+      <div>
+        Icons made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2021, Hagan Works</span>
+    </footer>
+  </div>
+</html>

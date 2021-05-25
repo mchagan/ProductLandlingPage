@@ -31,14 +31,18 @@ a {
   text-decoration: none;
 }
 
-/* h1 {
-  text-align: center;
-} */
-
 .container {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+
+/* The following is a hack to ensure the nav link moves the content down below the header */
+.pre-container-for-nav {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  height: 30px;
 }
 
 .btn {
@@ -61,9 +65,9 @@ header {
   position: fixed;
   top: 0;
   min-height: 75px;
-  padding: 0px 20px;
+  padding: 0px 40px;
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-around;
   align-items: center;
   background-color: #eee;
 }
@@ -87,15 +91,13 @@ header {
 }
 
 .logo > img {
-  width: 180px;
-  height: 180px;
+  width: 100px;
+  height: 100px;
   max-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px; */
 }
 
 @media (max-width: 650px) {
@@ -151,15 +153,9 @@ nav > ul {
   word-wrap: break-word;
 }
 
-/* @media (max-width: 580px) {
-  #intro {
-    height: 300px;
-    margin-top: 150px;
-  }
-} */
 @media (max-width: 650px) {
   #intro {
-    margin-top: 120px;
+    margin-top: 200px;
   }
 }
 
@@ -171,8 +167,8 @@ nav > ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  width: 100px;
+  height: 125px;
+  width: 12vw;
 }
 
 @media (max-width: 650px) {
@@ -198,12 +194,6 @@ nav > ul {
     height: 150px;
   }
 }
-
-/* @media (max-width: 650px) {
-  #features {
-    margin-top: 0;
-  }
-} */
 
 #options {
   margin-top: 60px;
@@ -289,7 +279,7 @@ form {
   border: 0;
   background-color: #f1c40f;
 }
-/* html body form#contact-form input#submit.submit-button */
+
 #form input[type="submit"]:hover {
   background-color: orange;
   transition: background-color 1s;

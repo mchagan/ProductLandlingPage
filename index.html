@@ -7,38 +7,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <div id="page-wrapper">
+  <body id="page-wrapper">
     <header id="header">
       <div class="logo">
-        <img
+        <!-- <img
           id="header-img"
           src="https://github.com/mchagan/ProductLandlingPage/blob/main/efadda77bcec457c9a2e538b40d48665.png"
+          alt="Hagan Works logo"
+        /> -->
+        <img
+          id="header-img"
+          src="efadda77bcec457c9a2e538b40d48665.png"
           alt="Hagan Works logo"
         />
       </div>
       <nav id="nav-bar">
         <ul>
-          <li><a class="nav-link" href="#intro">Features</a></li>
-          <li><a class="nav-link" href="#options">Options</a></li>
+          <li><a class="nav-link" href="#pre-intro">Features</a></li>
+          <li><a class="nav-link" href="#pre-options">Options</a></li>
           <li><a class="nav-link" href="#contact-section">Contact Us</a></li>
         </ul>
       </nav>
     </header>
 
 
-    <div class="container"></div>
-
-    <!-- <div class="container"> -->
+    <div class="pre-container-for-nav">
+      <section id="pre-intro">
+      </section>
+    </div>
+    <div class="container">
       <section id="intro">
         <h2>Handcrafted, home-made kayaks, wherrys and doughboys (H 12 1/2)</h2>
       </section>
-    <!-- </div> -->
+    </div>
 
     <div class="container">
       <section id="features">
@@ -90,6 +97,10 @@
         </div>
       </section>
 
+      <div class="pre-container-for-nav">
+        <section id="pre-options">
+        </section>
+      </div>  
       <section id="options">
         <div class="product" id="kayak">
           <div class="level">Kayak</div>
@@ -252,7 +263,7 @@
           />
         </form>
       </section>
-    </div>
+    </body>
     <footer>
       <div>
         Icons made by
@@ -264,7 +275,7 @@
       <ul>
         <li><a href="#">Privacy</a></li>
         <li><a href="#">Terms</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact-section">Contact</a></li>
       </ul>
       <span>Copyright 2021, Hagan Works</span>
     </footer>
